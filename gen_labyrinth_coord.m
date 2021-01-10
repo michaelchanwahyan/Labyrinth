@@ -4,9 +4,8 @@ clc
 
 img = rgb2gray(imread('labyrinth.png'));
 img = img(3:806,:,:);
-img = img > 128 ;
-img = imresize(img,0.5);
-img = imresize(img,0.5);
+img = img > 250 ;
+img = imresize(img,0.125);
 
 img = 1 * img;
 
